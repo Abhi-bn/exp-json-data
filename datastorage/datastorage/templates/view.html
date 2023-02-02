@@ -1,0 +1,18 @@
+<div id="content-main">
+    <style>
+        tr>* {
+            border: black 1px solid;
+            padding: 10px;
+        }
+    </style>
+    <table>
+        {% for ee in rows %}
+        <tr>
+            <th>{{ ee.user_id }}</th>
+            <th>{{ ee.data_source }}</th>
+            <th>{{ ee.data_type }}</th>
+            <th>{{ ee.data }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from datastorage.core import processJSON, view
+from datastorage.core import view, getJSON
 
 urlpatterns = [
-    path('', processJSON),
+    path('', getJSON),
     path('view', view),
     path('admin/', admin.site.urls),
 ]

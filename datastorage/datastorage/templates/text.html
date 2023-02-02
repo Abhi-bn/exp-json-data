@@ -1,0 +1,11 @@
+<div id="content-main">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            <textarea name="json"></textarea>
+        </div>
+        <div>
+            <button type="submit">Update</button>
+        </div>
+    </form>
+</div>
